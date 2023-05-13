@@ -1,7 +1,7 @@
 {
   "name": "team-profile-generator",
   "version": "1.0.0",
-  "description": "I WANT to generate a webpage that displays my team's basic info<br />    [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)<br />",
+  "description": "I WANT to generate a webpage that displays my team's basic info",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -15,6 +15,12 @@
   },
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  },
+  "devDependencies": {
+    "jest": "^29.5"
+  },
   "bugs": {
     "url": "https://github.com/RoboTom01/Team-Profile-Generator/issues"
   },

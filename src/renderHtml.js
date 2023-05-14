@@ -7,17 +7,14 @@ renderHTML = (data) => {
         const role = employee.getRole(); 
         if (role === 'Manager') {
             const managerCard = renderManager(employee);
-
             pageArray.push(managerCard);
         }
         if (role === 'Engineer') {
             const engineerCard = renderEngineer(employee);
-
             pageArray.push(engineerCard);
         }
         if (role === 'Intern') {
             const internCard = renderIntern(employee);
-
             pageArray.push(internCard);
         }
     }
@@ -40,6 +37,7 @@ const renderTeamPage = function (employeeCards) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Team Profile</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -80,8 +78,8 @@ const renderEngineer = function (engineer) {
             </div>
             <div class="card-body">
                 <p class="id">ID: ${engineer.id}</p>
-                <p class="email">Email: <a href="mailto:${engineer.email}">${engineer.email}</a></p>
-                <p class="github">Github: <a href="https://github.com/${engineer.github}">${engineer.github}</a></p>
+                <p class="email">Email: <a href="mailto: ${engineer.email}"> ${engineer.email}</a></p>
+                <p class="github">Github: <a href="https://github.com/${engineer.github}"> ${engineer.github}</a></p>
             </div>
         </div>
     </div>
@@ -98,7 +96,7 @@ const renderIntern = function (intern) {
             </div>
             <div class="card-body">
                 <p class="id">ID: ${intern.id}</p>
-                <p class="email">Email:<a href="mailto:${intern.email}">${intern.email}</a></p>
+                <p class="email">Email:<a href="mailto: ${intern.email}"> ${intern.email}</a></p>
                 <p class="school">School: ${intern.school}</p>
             </div>
         </div>
@@ -116,7 +114,7 @@ const renderManager = function (manager) {
             </div>
             <div class="card-body">
                 <p class="id">ID: ${manager.id}</p>
-                <p class="email">Email: <a href="mailto:${manager.email}">${manager.email}</a></p>
+                <p class="email">Email: <a href="mailto:${manager.email}"> ${manager.email}</a></p>
                 <p class="office">Office Number: ${manager.officeNumber}</p>
             </div>
         </div>

@@ -27,7 +27,7 @@
   ---
 
   ## Tests:
-  Uses `jest`<br />
+  Uses [jest](https://www.npmjs.com/package/jest)<br />
   Enter `npm test` in the repository terminal.<br />
 
 

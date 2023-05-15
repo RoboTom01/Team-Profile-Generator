@@ -196,7 +196,6 @@ const writeFile = data => {
         }
     })
     fs.writeFile('./dist/style.css', renderCSS, function (err) {
-        console.log(renderCSS);
         if (err) {
             console.log(err);
             return;

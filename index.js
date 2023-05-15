@@ -187,7 +187,8 @@ const addManager = () => {
 
 // function to generate HTML page file using file system 
 const writeFile = data => {
-    fs.writeFile('./dist/index.html', data, err => {
+    fs.writeFile('./dist/index.html', data, function (err) {
+        // console.log(data);
         if (err) {
             console.log(err);
             return;
@@ -196,6 +197,7 @@ const writeFile = data => {
         }
     })
     fs.writeFile('./dist/style.css', renderCSS, function (err) {
+        // console.log(renderCSS);
         if (err) {
             console.log(err);
             return;
@@ -213,9 +215,9 @@ addManager()
     .then(pageHTML => {
     return writeFile(pageHTML);
 })
-    .then(pageCSS => {
-    return writeFile(pageCSS);
-})
+//     .then(pageCSS => {
+//     return writeFile(pageCSS);
+// })
     .catch(err => {
     console.log(err);
 });

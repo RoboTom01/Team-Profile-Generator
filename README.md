@@ -1,5 +1,5 @@
 # Team Project Generator  
-  I WANT to generate a webpage that displays my team's basic info.<br /> Tool using node.js and additional plugins to generate a website for a company's team profile.<br /> [Example Video](https://watch.screencastify.com/v/r1aImDLb1BZkBZ0uOVIJ)<br />
+  I WANT to generate a webpage that displays my team's basic info.<br /> Tool using node.js and additional plugins to generate a website for a company's team profile.<br /> After initiating, `inquirer` will walk the user through a series of questions in the terminal to build their team profile.<br /> [Example Video](https://watch.screencastify.com/v/r1aImDLb1BZkBZ0uOVIJ)<br />
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)<br />
   
 

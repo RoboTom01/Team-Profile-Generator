@@ -2,7 +2,6 @@
 //     styleArray = []; 
 //     styleArray.join('')
 //     renderStyle(styles);
-
 // };
 
 const renderCSS = 
@@ -24,10 +23,6 @@ body {
 
 /* classes */
 
-.navbar-brand {
-    font-size: 50px;
-}
-
 .card-header {
     background-color: var(--primary);
     color: var(--secondary);
@@ -36,7 +31,7 @@ body {
 .card-body {
     background-color: var(--secondary);
     color: var(--primary);
-    min-width: 500px;
+    width: 500px;
 }
 
 .container {
@@ -44,6 +39,10 @@ body {
     justify-content: space-evenly;
     display: flex;
     
+}
+
+.navbar-name {
+    font-size: 50px;
 }
 
 /* id's */
@@ -54,8 +53,6 @@ body {
     font-size: 50px;
 }
 `;
-
-
 
 
 module.exports = renderCSS;
